@@ -14,12 +14,14 @@ class App extends Component {
           </div>
           <div className="navInfo">
             <h1>Front-End Web Developer</h1>
-            <p>Based out of Rockville, MD. Specializing in custom WordPress theme development. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.</p>
-            <a className="hero__button btn-red" href="">button 1</a>
-            <a className="hero__button" href="">button 2</a>
+            <p>Based out of Rockville, MD. Specializing in custom websites using React and Vanilla Javascript. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <a className="contact__link" href="mailto:juancbaires@gmail.com?Subject=Hello">here</a>.</p>
+            <div className="button__container">
+              <a className="hero__button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdm-A7mtfa4iABGip-fkGRs9-S49DVdyRTjI7qFR2VOROUSqg/viewform?usp=sf_link">I need a website  <i className="fas fa-arrow-right"></i></a>
+              <a className="hero__button btn--red" target="_blank" href="https://drive.google.com/file/d/16sFQF9q-eovBvGDUZurEZM4g7XG-Kt02/view?usp=sharing">Resume  <i className="far fa-file"></i></a>
+            </div>
           </div>
         </section>
-      </div>
+      </div >
     );
   }
 }

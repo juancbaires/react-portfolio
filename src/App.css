@@ -24,21 +24,21 @@ body {
 .nav {
   width: 100%;
   display: flex;
+  flex-direction: row;
   font-size: 2.5rem;
   font-weight: 500;
   padding: 5px;
-  height: 7rem;
 }
 
 .nav__item {
   list-style: none;
-  color: white;
-  margin-left: 15px;
+  color: #FDFFFC;
   padding-top: 15px;
+  margin-left: 9px;
 }
 
 .nav__item:hover {
-  border-bottom: 2px solid #EA2C42;
+  border-bottom: 5px solid #EA2C42;
   cursor: pointer;
 }
 
@@ -49,24 +49,58 @@ body {
 .navInfo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 500px;
-  align-items: center;
+  justify-content: space-around;
+  width: 700px;
+  align-self: center;
 }
 
 p {
-  color: white;
+  color: #FDFFFC;
   font-size: 24px;
   text-align: center;
 }
 
 h1 {
-  color: white;
+  color: #FDFFFC;
   font-family: 'Open Sans';
   font-size: 48px;
 }
 
+.contact__link {
+  text-decoration: none;
+  color: #EA2C42;
+  border-bottom: 1px dashed #EA2C42;
+}
+
+/**
+ * button container
+ */
+
 .hero__button {
   text-decoration: none;
-  color: white;
+  color: #FDFFFC;
+  background-color: rgba(79, 80, 80, 0.6);
+  width: 200px;
+  font-size: 24px;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  align-self: center;
+  justify-content: space-evenly;
+  border-radius: 3px;
+}
+
+.btn--red {
+  background-color: #EA2C42;
+}
+
+.button__container {
+  display: flex;
+  align-self: center;
+  /* width: 300px; */
+}
+
+.hero__button i {
+  padding-top: 3px;
 }
