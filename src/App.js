@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom'
 import './App.css';
 
 class App extends Component {
+  state = {
+    toggleMenu: 'nav'
+  }
+
+  toggleMobileMenu = () => {
+    if (this.state.toggleMenu === 'nav') {
+      this.setState({ toggleMenu: 'active' })
+    } else (this.setState({ toggleMenu: 'nav' }))
+  }
   render() {
     return (
       <div className="App">
         <section className="hero">
-          <div className="nav">
+          <div className='toggle'><i onClick={this.toggleMobileMenu} className="fas fa-bars" aria-hidden="true"></i></div>
+          <div className={this.state.toggleMenu}>
             <li className="nav__item">Home</li>
             <li className="nav__item">About</li>
             <li className="nav__item">Projects</li>
@@ -21,6 +32,11 @@ class App extends Component {
             </div>
           </div>
         </section>
+        <main>
+          <Switch>
+            <Route></Route>
+          </Switch>
+        </main>
       </div >
     );
   }

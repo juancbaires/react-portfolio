@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url('./images/splash.jpg');
-  height: 720px;
+  height: 680px;
   width: 100vw;
   background-position: center;
   background-size: cover;
@@ -28,13 +28,14 @@ body {
   font-size: 2.5rem;
   font-weight: 500;
   padding: 5px;
+  height: 70px;
 }
 
 .nav__item {
   list-style: none;
   color: #FDFFFC;
   padding-top: 15px;
-  margin-left: 9px;
+  margin-left: 15px;
 }
 
 .nav__item:hover {
@@ -98,9 +99,68 @@ h1 {
 .button__container {
   display: flex;
   align-self: center;
-  /* width: 300px; */
 }
 
 .hero__button i {
   padding-top: 3px;
+}
+
+/**
+ * mobile responsive menu
+ */
+
+.toggle {
+  width: 100%;
+  color: #FDFFFC;
+  padding: 15px;
+  font-size: 30px;
+  box-sizing: border-box;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+    text-align: right;
+    background-color: rgb(7, 23, 28, .9)
+  }
+  .nav {
+    width: 100%;
+    display: none;
+  }
+  .nav__item {
+    width: 100vw;
+    margin: 0;
+    padding: 20px auto;
+    background-color: rgb(7, 23, 28, .4);
+    z-index: 4;
+    position: relative;
+    font-size: 24px;
+  }
+  .hero {
+    position: absolute;
+  }
+  .active {
+    display: block;
+  }
+  /**
+   * this is for the content inside of the hero 
+   */
+  .button__container {
+    flex-direction: column;
+  }
+  .navInfo h1, p {
+    width: 300px;
+    align-self: center;
+  }
+  .navInfo h1 {
+    font-size: 30px;
+  }
+  .hero__button {
+    font-size: 24px;
+    width: 140px;
+  }
+  .hero {
+    height: 100vh;
+  }
 }
