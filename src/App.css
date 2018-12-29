@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Abel', sans-serif;
+  line-height: 1;
 }
 
 /**
@@ -55,13 +56,13 @@ body {
   align-self: center;
 }
 
-p {
+.navInfo p {
   color: #FDFFFC;
   font-size: 24px;
   text-align: center;
 }
 
-h1 {
+.navInfo h1 {
   color: #FDFFFC;
   font-family: 'Open Sans';
   font-size: 48px;
@@ -163,4 +164,75 @@ h1 {
   .hero {
     height: 100vh;
   }
+}
+
+/**
+ * project section
+ */
+
+.project__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 25px;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.project__image {
+  height: 550px;
+  width: 620px;
+}
+
+.project__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+  width: 500px;
+  height: 17rem;
+}
+
+.project__info p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.project__info a {
+  font-size: 28px;
+  background-color: #EA2C42;
+  color: white;
+  padding: 7px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.project__buttons {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.project__buttons span {
+  background-color: #EA2C42;
+  margin: 5px;
+  color: #FDFFFC;
+  border-radius: 4px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+}
+
+.project--one {
+  background-image: url('./images/macbookgrey_front.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
