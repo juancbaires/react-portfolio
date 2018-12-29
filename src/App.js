@@ -36,7 +36,7 @@ class App extends Component {
           <div className="project">
             <div className="project__image project--one"></div>
             <div className="project__info">
-              <h2><a rel="noopener noreferrer" target="_blank" href="https://ateball.surge.sh/">Ate-Ball</a></h2>
+              <h1><a rel="noopener noreferrer" target="_blank" href="https://ateball.surge.sh/">Ate-Ball</a></h1>
               <p>My latest Project where I partnered with Luis Ortiz to create a React app that will solve the world problem risen by the question "where do you want to go eat?" Using geolocation, Zomatos and Yelp Fusion Api I present to you, Ateball. React Native version coming soon. </p>
               <div className="project__buttons"><span>React</span><span>CSS</span><span>HTML</span><span>Yelp</span>
                 <span>Zomato</span><span>Geolocation</span></div>

@@ -152,14 +152,16 @@ body {
   }
   .navInfo h1, p {
     width: 300px;
+    font-size: 12px;
     align-self: center;
   }
   .navInfo h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
   .hero__button {
-    font-size: 24px;
+    font-size: 18px;
     width: 140px;
+    height: 30px;
   }
   .hero {
     height: 100vh;
@@ -202,12 +204,13 @@ body {
 .project__info p {
   font-size: 20px;
   line-height: 1.2;
+  color: #5E6468;
+  font-weight: 650;
 }
 
 .project__info a {
   font-size: 28px;
-  background-color: #EA2C42;
-  color: white;
+  color: #07171C;
   padding: 7px;
   border-radius: 4px;
   text-decoration: none;
