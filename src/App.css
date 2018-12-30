@@ -5,6 +5,9 @@
 body {
   font-family: 'Abel', sans-serif;
   line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
 }
 
 /**
@@ -139,7 +142,7 @@ body {
     font-size: 24px;
   }
   .hero {
-    position: absolute;
+    /* position: absolute; */
   }
   .active {
     display: block;
@@ -166,6 +169,43 @@ body {
   .hero {
     height: 100vh;
   }
+  /**
+   * project container/items for smaller screens
+   */
+  .project__container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .project {
+    /* margin: 0; */
+    max-width: 100%;
+    align-self: center;
+    flex-direction: column !important;
+    height: 600px;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+  }
+  .project__info p {
+    font-size: 18px !important;
+  }
+  .project__info h1 {
+    font-size: 20px !important;
+  }
+  .project__image {
+    align-self: center;
+    height: 200px !important;
+    width: 250px !important;
+  }
+  .project__buttons {
+    max-width: 100%;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 70px;
+  }
 }
 
 /**
@@ -185,6 +225,10 @@ body {
   justify-content: space-around;
   padding-right: 25px;
   box-shadow: 0 4px 2px -2px gray;
+}
+
+.project__info {
+  max-width: 100%;
 }
 
 .project__image {
@@ -209,7 +253,7 @@ body {
 }
 
 .project__info a {
-  font-size: 28px;
+  font-size: 35px;
   color: #07171C;
   padding: 7px;
   border-radius: 4px;
@@ -219,22 +263,47 @@ body {
 .project__buttons {
   display: flex;
   flex-direction: row;
-  height: 200px;
+  flex-wrap: wrap;
 }
 
-.project__buttons span {
+.project__title a:hover {
+  border-bottom: 5px solid #EA2C42;
+}
+
+span {
   background-color: #EA2C42;
   margin: 5px;
   color: #FDFFFC;
   border-radius: 4px;
   font-size: 24px;
-  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 7px;
 }
 
 .project--one {
   background-image: url('./images/macbookgrey_front.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project--two {
+  background-image: url('./images/PixaShareLapTop.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project--three {
+  background-image: url('./images/SweetestMemories.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project--four {
+  background-image: url('./images/FrontTriviaMacBook.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
