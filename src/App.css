@@ -141,9 +141,6 @@ body {
     position: relative;
     font-size: 24px;
   }
-  .hero {
-    /* position: absolute; */
-  }
   .active {
     display: block;
   }
@@ -171,6 +168,46 @@ body {
   }
   /**
    * project container/items for smaller screens
+   */
+  .project__container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .project {
+    /* margin: 0; */
+    max-width: 100%;
+    align-self: center;
+    flex-direction: column !important;
+    height: 600px;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+  }
+  .project__info p {
+    font-size: 18px !important;
+  }
+  .project__info h1 {
+    font-size: 20px !important;
+  }
+  .project__image {
+    align-self: center;
+    height: 200px !important;
+    width: 250px !important;
+  }
+  .project__buttons {
+    max-width: 100%;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /**
+   * project container/items for tablet size screens
    */
   .project__container {
     margin: 0;
