@@ -345,3 +345,23 @@ span {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+/**
+ * contact button
+ */
+
+.contact--button {
+  background-color: #EA2C42;
+  font-size: 26px!important;
+  position: fixed !important;
+  bottom: 15px !important;
+  right: 25px;
+  border-radius: 8em;
+  color: #FDFFFC;
+  padding: 16px;
+}
+
+.contact--button:hover {
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.5) !important;
+  cursor: pointer;
+}

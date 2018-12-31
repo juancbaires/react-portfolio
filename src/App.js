@@ -67,6 +67,7 @@ class App extends Component {
             </div>
           </div>
         </section>
+        <a className="contact--button"><i class="fas fa-envelope"></i> Contact</a>
         <section className="about">
           <h1>About Me</h1>
         </section>
