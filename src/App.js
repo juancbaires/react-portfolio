@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
 import './App.css';
 
 class App extends Component {
   state = {
-    toggleMenu: 'nav'
+    toggleMenu: 'nav',
+    headerColor: ''
+  }
+
+  listenScrollEvent = e => {
+    if (window.scrollY > 600) {
+      this.setState({ headerColor: '#07171C' })
+    } else {
+      this.setState({ headerColor: '' })
+    }
+  }
+
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.listenScrollEvent)
   }
 
   toggleMobileMenu = () => {
@@ -12,12 +24,13 @@ class App extends Component {
       this.setState({ toggleMenu: 'active' })
     } else (this.setState({ toggleMenu: 'nav' }))
   }
+
   render() {
     return (
       <div className="App">
         <section className="hero">
           <div className='toggle'><i onClick={this.toggleMobileMenu} className="fas fa-bars" aria-hidden="true"></i></div>
-          <div className={this.state.toggleMenu}>
+          <div style={{ backgroundColor: this.state.headerColor, position: 'fixed' }} id='nav--mobile' className={this.state.toggleMenu}>
             <li className="nav__item">Home</li>
             <li className="nav__item">About</li>
             <li className="nav__item">Projects</li>
@@ -67,15 +80,40 @@ class App extends Component {
             </div>
           </div>
         </section>
-        <a className="contact--button"><i class="fas fa-envelope"></i> Contact</a>
-        <section className="about">
-          <h1>About Me</h1>
+        <a href="mailto:juancbaires@gmail.com?Subject=Hello" className="contact--button"><i className="fas fa-envelope"></i> Contact</a>
+        <h1 className="about__header">About</h1>
+        <section className="about__container">
+          <div className="aboutImage"></div>
+          <div className="about__info">
+            <div className="red__bar"></div>
+            <p>I’m <span id="about--name">Juan</span>! A Front-End Developer who writes clean, efficient and reusable code.
+              My attention to detail, diagnostic skills and team work are essential to my approach,
+               and guided me during my Army service. I am able to adapt and overcome any problem at hand.</p>
+          </div>
         </section>
-        <main>
-          <Switch>
-            <Route></Route>
-          </Switch>
-        </main>
+        <section className="contact">
+          <div className="contact__container">
+            <h1 className="contact__header">Contact</h1>
+          </div>
+
+          <div className="form__card"><form className="form__wrapper" action="https://formspree.io/juancbaires@gmail.com" method="POST">
+            <input type="text" placeholder="Name" name="name" required></input>
+            <input type="email" placeholder="Email" name="_replyto" required></input>
+            <textarea type="text" placeholder="Message" name="message" id="" cols="30" rows="10" required></textarea>
+            <input className="form__button" type="submit" value="Send"></input>
+          </form ></div>
+        </section>
+        <footer className="socialMedia__container">
+          <div className="socialMedia__items">
+            <a href="#" className="media"><i className="fab fa-linkedin"></i></a>
+            <a href="#" className="media"><i className="fab fa-github-square"></i></a>
+            <a href="#" className="media"><i className="fab fa-twitter-square"></i></a>
+            <a href="#" className="media"><i className="fab fa-youtube-square"></i></a>
+          </div>
+          <div className="copyright">
+            <h3 className="copyright__items">Juan Baires</h3>
+          </div>
+        </footer>
       </div >
     );
   }
