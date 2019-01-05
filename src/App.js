@@ -80,7 +80,7 @@ class App extends Component {
             </div>
           </div>
         </section>
-        <a href="mailto:juancbaires@gmail.com?Subject=Hello" className="contact--button"><i className="fas fa-envelope"></i> Contact</a>
+        <a href="mailto:juancbaires@gmail.com?Subject=Hello" className="contact--button contact--mobile"><i className="fas fa-envelope"></i> Contact</a>
         <div id="about"></div>
         <h1 className="about__header">About</h1>
         <section className="about__container">

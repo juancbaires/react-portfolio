@@ -8,6 +8,8 @@ body, html {
   margin: 0;
   padding: 0;
   font-size: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /**
@@ -27,7 +29,7 @@ body, html {
 }
 
 .nav {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   font-size: 2.5rem;
@@ -131,14 +133,28 @@ body, html {
 
 @media (max-width: 768px) {
   .toggle {
+    width: 100% !important;
     display: block;
     position: fixed;
     text-align: right;
     z-index: 5;
     background-color: #07171C;
+    overflow-x: hidden;
+  }
+  .contact--mobile {
+    background-color: #EA2C42;
+    font-size: 16px !important;
+    position: fixed !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    border-radius: 8em;
+    color: #FDFFFC;
+    text-decoration: none;
+    padding: 10px !important;
   }
   .contact {
     height: 60rem !important;
+    width: 100vw !important;
   }
   .about__container {
     display: flex;
@@ -169,6 +185,9 @@ body, html {
   }
   .about__container {
     width: 100%;
+  }
+  .form__card {
+    width: 100% !important;
   }
   .nav {
     width: 100%;
@@ -204,13 +223,18 @@ body, html {
   .navInfo h1 {
     font-size: 24px;
   }
+  .navInfo {
+    width: 100% !important;
+  }
   .hero__button {
     font-size: 18px;
     width: 140px;
     height: 30px;
   }
   .hero {
+    flex-direction: row;
     height: 100vh;
+    width: 100vw !important;
   }
   .n {
     position: fixed;
@@ -245,11 +269,11 @@ body, html {
     width: 250px !important;
   }
   .project__buttons {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     align-self: center;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
     max-height: 70px;
   }
 }
@@ -540,8 +564,8 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 20rem;
+  justify-content: space-evenly;
+  height: 23rem;
 }
 
 .socialMedia__items {
