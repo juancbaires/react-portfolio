@@ -189,6 +189,9 @@ body, html {
   .form__card {
     width: 100% !important;
   }
+  .form__button {
+    -webkit-appearance: none !important;
+  }
   .nav {
     width: 100%;
     display: none;
