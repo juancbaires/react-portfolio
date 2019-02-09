@@ -25,16 +25,21 @@ class App extends Component {
     } else (this.setState({ toggleMenu: 'nav' }))
   }
 
+  toggleBack = () => {
+    if (this.state.toggleMenu === 'active') {
+      this.setState({ toggleMenu: 'nav' })
+    }
+  }
   render() {
     return (
       <div className="App">
         <section id="hero" className="hero">
           <div className='toggle'><i onClick={this.toggleMobileMenu} className="fas fa-bars" aria-hidden="true"></i></div>
           <div style={{ backgroundColor: this.state.headerColor, position: 'fixed' }} id='nav--mobile' className={this.state.toggleMenu}>
-            <li className="nav__item"><a href="#hero" >Home</a></li>
-            <li className="nav__item"><a href="#about" >About</a></li>
-            <li className="nav__item"><a href="#projects" >Projects</a></li>
-            <li className="nav__item"><a href="#contact" >Contact</a></li>
+            <li className="nav__item"><a onClick={this.toggleBack} href="#hero" >Home</a></li>
+            <li className="nav__item"><a onClick={this.toggleBack} href="#about" >About</a></li>
+            <li className="nav__item"><a onClick={this.toggleBack} href="#projects" >Projects</a></li>
+            <li className="nav__item"><a onClick={this.toggleBack} href="#contact" >Contact</a></li>
           </div>
           <div className="navInfo">
             <h1>Front-End Web Developer</h1>
@@ -45,6 +50,8 @@ class App extends Component {
             </div>
           </div>
         </section>
+
+
         <section id="projects" className="project__container">
           <div className="project">
             <div className="project__image project--one"></div>
