@@ -19,7 +19,7 @@ body, html {
 .hero {
   display: flex;
   flex-direction: column;
-  background-image: url('https://lh3.googleusercontent.com/cPFLRuVdCKGNUBd5H6P3QTGbeoIXGEa9dPQGtO2nsoMpFnkotFiHa5fUEttSRhe5mvjtj_gzVyAuqo1xTJhA2dKfRREZxug9pCD9aqgG5Fo-94Ya7YaF0EDEEk17WuYpMDchwGYWTvPjtDUCGvbHhyDGfCWQjfB8HB0dJKEp5pTw0vGNVmhXvUxeKjuYjGeaRDOthgJH5OM5M9YG6CTTqik6YpJzKdYdP2SnM94ZcX_-Xuo4XbrRRb7MxPE8Xb4hc8YyXsK-U5-P98Jrmd_YetLO2xW1RlK7EI18eZkQUbtLp00c1hfYurZhhO-ALCdHSNzzufvaTm_DM78nGGUtg7FvWj_Jea7rtnPJ3yODV05c3_6Zgv_xeiEc2b8ySC_Iib4UzgeQez2z5ORBazXW6T1JprCOnInRQaC-RaXJqO2HhTeFoUfgPBwPfEGXCH0IzWqhJ-qVULZspCKryxPRVjwjfVNPJtPSlnMGjjIyGfM2EGysSZcCQ4HbBdYE168xcbemBq9UUpMnG8boSmuN0cXoG7Oh-MP9Etm_cK-gO_GWnrt96vCf5SqIMGVV4sJTPUZSR0DXKyVgqyGtthIHo9VfmjhL7aAGZuO4H8LaOEA30r2VvV5znKILcrc35YiuQ8GRLYsSqAAZEG_j8Q=w2164-h1442-no');
+  background-image: url('./images/splash.jpg');
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -55,11 +55,13 @@ body, html {
 
 .navInfo {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 700px;
   align-self: center;
-  margin-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  height: 100%;
+  align-items: center;
+  padding: 0 15px;
 }
 
 #nav--mobile a {
@@ -231,7 +233,7 @@ body, html {
   .hero__button {
     font-size: 18px;
     width: 140px;
-    height: 30px;
+    height: 20px;
   }
   .hero {
     flex-direction: row;
@@ -394,28 +396,28 @@ span {
 }
 
 .project--one {
-  background-image: url('https://lh3.googleusercontent.com/8saAANinUCr-mT-sGvfPuVj-Wh526k97h8oprJCrIwwGmpzmyf53JMC2R1z_30U4_NpY407krNyQbdYwDnV-jsZWuqAzVgdYGAe8iECxrtV9KSIV2SsF4qYl4UUmURo_-2dTyc_1-7AP3BN15iEHO9J_iU9x6wRliEHKfioAexMvBRxXumHUBM2qtFQOekJzWfb1Ft3uZ_5XqYISbxvfcwFmjM6RJ1-r67j71ZlM6rQMtBLzvT3HrquRxZ2DEQ3thJWR6cIADeojDN8K1E3CruB8wiYwW_YeebH3QoIRImiQBqZ4hqe6yXqqC2jecvwKV0royEMoILk1_dNPlcfVsetbxmAU6AC_HTqXYyA_-V6hYGx-bQC7b8pLydT1XEA4DeCcKTKmcQ5XW5-eMQsxU99cLfUa3HM8lQqUSomIIPArapIU1mxrckAi28Jl9Zj7hh9MHjtBXdb3cadK2KjMWZ1ftbZlOHYZon3_SV-0GAXr5LQMXmuzA4S_xVydL8FuRq8v_oVa3DE1UyIfcsj3V0wSKFqb2RplL-FyRGAiGVCN0eqbWxaLiJt4Jnfcv5yuLwdzWnUb_f45YlBSFQzSM5uiUF1rK-wQbA86pY66QJpBesdX5W2B1RPp_FQBs6qfXipO-zc9LfLw66KGUA=s1442-no');
+  background-image: url('./images/macbookgrey_front.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .project--two {
-  background-image: url('https://lh3.googleusercontent.com/sBk9VoGzn0_I9oJP32sDxoUbH-jRVGw50MoRgLGwiaUaGZpZqYYJwkC4vbHN9P0PogNlzq7fN7O0cM0rzSNdmMjcBoWCLxI_aIVsYZQJKNdKAsp8MEmDiNRsgw11iP4EXW89z0yGm2XTIBc1u75reyHjH8OPkq8sjCSQdavxzwzGmTo4aGeN3lIVtvkEWmdhCtlSDMw2SGr4LTtEnwfMHTntT4nuPsrfVsi05Kb1plPesz37jmBmsiXZqrefzoDj0-LXxaCajagNF8l2TukxZDS6dmU_ZrLMAjExKxXwCL24s-TG5WBr2oZndub2GqsA29W8gunFYVCOGwf-hL3BG0nukQD5v8UMvlZzFVdbY2tLQ3fZdmllYkyAhzqHpafzuogLIWRx6ocKAHqOV7Bo_tygXefNt99TZy_2_VLqNulCOOyg47K6NK1FJ1_vtSPiGpLIbCjI9ryY69w6u066kQxWyq306l6dfRrFydtviAxufqpDo6OCY45XW4RoOThtZzjIEs2gX1Mkp-snsP6rI4uvm2PxHmONcgu_XdjXvHNqNFxivJqOzOKcV0FgmXz4QbrAQSN935ppHp5zBAV4B_cSYCDGDOxXSNb-SyHTys831jk4m6adNdZOzEM9IXYRiWF_rFJLb-0XW2ETPA=s1442-no');
+  background-image: url('./images/PixaShareLapTop.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .project--three {
-  background-image: url('https://lh3.googleusercontent.com/RWtEu0bTDdXHuJtioJ-uOahyE3JLtHembljSpp_JOedeZU_1zPdzpSnazQ2MhiZMrsVqal8cwUr0rGRx9YwayBtchxKAweIu9HSLUGp5naycpNDyDsqPJvqn5BvC2ZwNhnE7xbf40GpwP12b74sylfM6cZCBPzos9VWpCB1N8tlHiRlNge1YPf8ckB-t0Au7rmbRf1qDS5JiKkmpu_8I65YWDg-Xcom8nl_Mx3nt2kQ_9dMmHVFA30qFleDha6q31YE8FiPQiXlJZKYc9vSFAEXPckmn5YkjFRjy6dvANILp2XuyTuaXq_ZY6FkLHfqVSJLHig1nJCBHbI3TSAkp_6una6XouxVuTYEcoROKmwAYXhwt_Ax2oWexzeii9SXrhuZwh-gFSy9VGaMQHR39iLkVo6ZGVyUPChoWSrrkOUEBBwIg1EuvZf4f2dHU5JYjUA8STe3mjkhxr9Ej0_keQxHKHx0Idzedo7YlxAsxnvlxA_qhh7s_8Q-a0SdKF2pCj_Ta1jVpjxCQM1GmnmDtC7ivJksrWEGaXZgn99KbzOoDQsLXU2cn-YYElfXhom2ke-PPUhDboea28E3lybb7Nq-SoCLYwkev9xmzKSio7LUZtnfDgLt05WPYwXNNfTLSJ2ihHjtsS3Xa_lS9sQ=s1442-no');
+  background-image: url('./images/SweetestMemories.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .project--four {
-  background-image: url('https://lh3.googleusercontent.com/Y-44y--VmN5wZJZ3BvZOekZA4bjNXc3EKenmMFMjze_zIZgyx0rwjffhNsFxnO_S_v2ClXrkgNU9feyCfQkEjJ5I9fJt3ZB47tPD6O9D2O61Xl8Fy2hrhYOKGZpwUkv9WY10hMjjhpCzgPvZz7lKmUwdqU5xAbahPiTT0c6zZnJyREKDfS6W9rEfOkr3MQ-0GobyrdNA1W_sbWwKWSIWV-n0QrgZ-6yTpZFxK9TjmailGNWJ0KrhwGG354_8NLx7ElqvXYktz5y_yYM4wTnS-43HUIjiZ4h-swpK3ZWWI9e3xuMH_T5Qro5K813dOJXWQxY1dqaOjGe0ODzKZs4rkdgTsJWPIdxxH42S-62Z92v-gDO_GvPe0b7TWH-bVlP8Lu27-oAj9LxKbc-98o-Nx81VFalMdfSnPPv2DqJfY8BFFU3JHp0m7JmYLNHYg2i8JqKTdIg-GFkwEyP0-Z6Ton7CpLb8-ZECKVGlMCjGQnxgYGcUKyR3aDL_s2j1Q5ixj7a2HBYot40PnOFt8M1d12J0emFyeiDR1_UshK8NpKkEl7ZVzbknGhB9E3jZQWSzLTqqPScWNV5afam0lhrLpC4D_pqCjmkFQau31cj2tewJqQ0BjQdFdc6ChThDYHyyuP3FeXLt1zALONX5cw=s1442-no');
+  background-image: url('./images/FrontTriviaMacBook.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -453,7 +455,7 @@ span {
 }
 
 .aboutImage {
-  background-image: url('https://lh3.googleusercontent.com/18KU8QP67qTmgDpgyqgm1ffdJCZjV6avFgDOXf1WRcnrqsdlUf1E_sav0urptHF8x9KBn9BkvCBOWFAH3XWgrisqiwH8zbHd6FiTUkCktyOvsXp24TKlbp7OJd_qA-iCRVgsSAVPudmk-_A6KrOCSgo_qchlkLBIJj8l-dH5jf1UubjdpK5saZURNVHrU1rF6CmFQpJQ8ZJB1GlKxCg6MKrnKt5U219ffe1l1pszGrcMf63Ea8krBHyXDOJtPoBs5Oh0b6_eQPsOk6DqrrggCxI4AO1psffaff2pnROLFWNhbTIIVe6yPNw2uevHc6RJVqjvK1gobOVP3TokDnT7-N4XLTbVJ35vr_7nUsN7IJdzoCIOwYqvALqdAhORst9V6q_9uRuzGkhauT-jSTyUcOocXADFBXg8I1vwScKzeoH296rnlEyRZ9n83ATW622OXMQTCFt5w5VLNImZSQLXsd46BuVN3Gp7_f6WzsMP6M7pdUP3loO9ovRpqSqjOyfxkY7e51iw5zHtZcHkRqb7GocdeWu9YHT9eYKfqhp97LHqrNinMeSm46c6kPNbGfYIxrJ3uxJXLLl9uigh_qpwFLxBbtDEgxJFOakVjZgJCpFPV2LAPbOAeEDCvVW6MDyE-uukobrhZ38j17keKw=w962-h1442-no');
+  background-image: url('./images/headShot.jpg');
   height: 20rem;
   width: 20rem;
   border-radius: 50%;

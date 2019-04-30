@@ -42,11 +42,12 @@ class App extends Component {
             <li className="nav__item"><a onClick={this.toggleBack} href="#contact" >Contact</a></li>
           </div>
           <div className="navInfo">
-            <h1>Front-End Web Developer</h1>
+            <h1>Software Engineer</h1>
             <p>Based out of Rockville, MD. Specializing in custom websites using React and Vanilla Javascript. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <a className="contact__link" href="mailto:juancbaires@gmail.com?Subject=Hello">here</a>.</p>
             <div className="button__container">
               <a className="hero__button" rel="noopener noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdm-A7mtfa4iABGip-fkGRs9-S49DVdyRTjI7qFR2VOROUSqg/viewform?usp=sf_link">I need a website  <i className="fas fa-arrow-right"></i></a>
-              <a className="hero__button btn--red" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/16sFQF9q-eovBvGDUZurEZM4g7XG-Kt02/view?usp=sharing">Resume  <i className="far fa-file"></i></a>
+
+              <a className="hero__button btn--red" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1CSZJe-i4ptVE907C3DG1xdVtet7aYxI_/view?usp=sharing">Resume  <i className="far fa-file"></i></a>
             </div>
           </div>
         </section>
@@ -58,8 +59,8 @@ class App extends Component {
             <div className="project__info">
               <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="https://ateball.surge.sh/">Ate-Ball</a></h1>
               <p>My latest Project where I partnered with Luis Ortiz to create a React app that will solve the world problem risen by the question "where do you want to go eat?" Using geolocation, Zomatos and Yelp Fusion Api I present to you, Ateball.</p>
-              <div className="project__buttons"><span>React</span><span>CSS</span><span>HTML</span><span>Yelp</span>
-                <span>Zomato</span><span>Geolocation</span></div>
+              <div className="project__buttons"><span>React</span><span>CSS</span><span>Mongo</span><span>Yelp</span>
+                <span>Node</span><span>Geolocation</span></div>
             </div>
           </div>
           <div className="project">
@@ -94,7 +95,7 @@ class App extends Component {
           <div className="aboutImage"></div>
           <div className="about__info">
             <div className="red__bar"></div>
-            <p>I’m <span id="about--name">Juan</span>! A Front-End Developer who writes clean, efficient and reusable code.
+            <p>I’m <span id="about--name">Juan</span>! A Software Engineer who writes clean, efficient and reusable code.
               My attention to detail, diagnostic skills and team work are essential to my approach,
                and guided me during my Army service. I am able to adapt and overcome any problem at hand.</p>
           </div>
