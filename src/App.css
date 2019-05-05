@@ -423,6 +423,13 @@ span {
   background-repeat: no-repeat;
 }
 
+.project--five {
+  background-image: url('./images/CE_MackbookFrame.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /**
  * contact button
  */

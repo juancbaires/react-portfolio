@@ -64,6 +64,15 @@ class App extends Component {
             </div>
           </div>
           <div className="project">
+            <div className="project__image project--five"></div>
+            <div className="project__info">
+              <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="http://centroevangelisticodc.org/">CE Church(Non-profit)</a></h1>
+              <p>A wordpress website for a non-profit organization and community of believers. This website was created using a Material Design based theme.</p>
+              <div className="project__buttons"><span>Wordpress</span><span>Google Maps</span><span>Material Design</span>
+                <span>HTML</span></div>
+            </div>
+          </div>
+          <div className="project">
             <div className="project__image project--two"></div>
             <div className="project__info">
               <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="https://sleepy-bayou-76332.herokuapp.com/">PixaShare</a></h1>
