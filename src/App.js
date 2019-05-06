@@ -109,8 +109,8 @@ class App extends Component {
                and guided me during my Army service. I am able to adapt and overcome any problem at hand.</p>
           </div>
         </section>
-        <section id="contact" className="contact">
-          <div className="contact__container">
+        <section className="contact">
+          <div id="contact" className="contact__container">
             <h1 className="contact__header">Contact</h1>
           </div>
 
@@ -118,7 +118,9 @@ class App extends Component {
             <input type="text" placeholder="Name" name="name" required></input>
             <input type="email" placeholder="Email" name="_replyto" required></input>
             <textarea type="text" placeholder="Message" name="message" id="" cols="30" rows="10" required></textarea>
-            <input className="form__button" type="submit" value="Send"></input>
+            <div>
+              <button className="form__button" type="submit" value="Send">Submit <i class="fas fa-paper-plane"></i></button>
+            </div>
           </form ></div>
         </section>
         <footer className="socialMedia__container">

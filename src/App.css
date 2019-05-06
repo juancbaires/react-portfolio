@@ -539,16 +539,32 @@ input {
   width: 20rem;
   border-radius: 4px;
   font-size: 1.5rem;
+  outline: 0;
+  border-width: 0 0 2px;
+  font-family: 'Abel', sans-serif;
+}
+
+input:focus {
+  border-color: #EA2C42
 }
 
 textarea {
+  font-family: 'Abel', sans-serif;
   border-radius: 4px;
   height: 15rem;
   width: 20rem;
   font-size: 1.5rem;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(94, 100, 104, .3);
+}
+
+textarea:focus {
+  border-color: #EA2C42
 }
 
 .form__button {
+  font-family: 'Abel', sans-serif;
   border-radius: 4px;
   width: 20.5rem;
   height: 2.8rem;
