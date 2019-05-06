@@ -47,7 +47,7 @@ class App extends Component {
             <div className="button__container">
               <a className="hero__button" rel="noopener noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdm-A7mtfa4iABGip-fkGRs9-S49DVdyRTjI7qFR2VOROUSqg/viewform?usp=sf_link">I need a website  <i className="fas fa-arrow-right"></i></a>
 
-              <a className="hero__button btn--red" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1CSZJe-i4ptVE907C3DG1xdVtet7aYxI_/view?usp=sharing">Resume  <i className="far fa-file"></i></a>
+              <a className="hero__button btn--red" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1JK7rl2aohb9mChh9sMovSFpA-178CIk_/view?usp=sharing">Resume  <i className="far fa-file"></i></a>
             </div>
           </div>
         </section>
