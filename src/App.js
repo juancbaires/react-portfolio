@@ -4,7 +4,8 @@ import './App.css';
 class App extends Component {
   state = {
     toggleMenu: 'nav',
-    headerColor: ''
+    headerColor: '',
+    contact: ''
   }
 
   listenScrollEvent = e => {
@@ -14,9 +15,17 @@ class App extends Component {
       this.setState({ headerColor: '' })
     }
   }
+  contactButton = e => {
+    if (window.scrollY > 3800) {
+      this.setState({ contact: 'hidden' })
+    } else {
+      this.setState({ contact: '' })
+    }
+  }
 
   componentDidMount = () => {
     window.addEventListener('scroll', this.listenScrollEvent)
+    window.addEventListener('scroll', this.contactButton)
   }
 
   toggleMobileMenu = () => {
@@ -47,7 +56,7 @@ class App extends Component {
             <div className="button__container">
               <a className="hero__button" rel="noopener noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdm-A7mtfa4iABGip-fkGRs9-S49DVdyRTjI7qFR2VOROUSqg/viewform?usp=sf_link">I need a website  <i className="fas fa-arrow-right"></i></a>
 
-              <a className="hero__button btn--red" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1JK7rl2aohb9mChh9sMovSFpA-178CIk_/view?usp=sharing">Resume  <i className="far fa-file"></i></a>
+              <a className="hero__button btn--red" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1JK7rl2aohb9mChh9sMovSFpA-178CIk_/view?usp=sharing">Resume <i className="far fa-file"></i></a>
             </div>
           </div>
         </section>
@@ -97,7 +106,7 @@ class App extends Component {
             </div>
           </div>
         </section>
-        <a href="mailto:juancbaires@gmail.com?Subject=Hello" className="contact--button contact--mobile"><i className="fas fa-envelope"></i> Contact</a>
+        <a href="mailto:juancbaires@gmail.com?Subject=Hello" className="contact--button contact--mobile" style={{ visibility: this.state.contact }} ><i className="fas fa-envelope"></i> Contact</a>
         <div id="about"></div>
         <h1 className="about__header">About</h1>
         <section className="about__container">
@@ -119,7 +128,7 @@ class App extends Component {
             <input type="email" placeholder="Email" name="_replyto" required></input>
             <textarea type="text" placeholder="Message" name="message" id="" cols="30" rows="10" required></textarea>
             <div>
-              <button className="form__button" type="submit" value="Send">Submit <i class="fas fa-paper-plane"></i></button>
+              <button className="form__button" type="submit" value="Send">Submit <i className="fas fa-paper-plane"></i></button>
             </div>
           </form ></div>
         </section>
