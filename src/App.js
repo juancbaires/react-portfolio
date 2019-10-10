@@ -56,7 +56,7 @@ class App extends Component {
             <div className="button__container">
               <a className="hero__button" rel="noopener noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdm-A7mtfa4iABGip-fkGRs9-S49DVdyRTjI7qFR2VOROUSqg/viewform?usp=sf_link">I need a website  <i className="fas fa-arrow-right"></i></a>
 
-              <a className="hero__button btn--red" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1JK7rl2aohb9mChh9sMovSFpA-178CIk_/view?usp=sharing">Resume <i className="far fa-file"></i></a>
+              <a className="hero__button btn--red" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1MPHa-aUFh2v5-ZTyUYD2QR7TfsYqUQBi/view?usp=sharing">Resume <i className="far fa-file"></i></a>
             </div>
           </div>
         </section>
@@ -64,16 +64,16 @@ class App extends Component {
 
         <section id="projects" className="project__container">
           <div className="project">
-            <div className="project__image project--one"></div>
+            <a rel="noopener noreferrer" target="_blank" href="https://699fourteenth.com/" className="image--link"><div className="project__image project--four"></div></a>
             <div className="project__info">
-              <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="https://ateball.surge.sh/">Ate-Ball</a></h1>
-              <p>My latest Project where I partnered with Luis Ortiz to create a React app that will solve the world problem risen by the question "where do you want to go eat?" Using geolocation, Zomatos and Yelp Fusion Api I present to you, Ateball.</p>
-              <div className="project__buttons"><span>React</span><span>CSS</span><span>Mongo</span><span>Yelp</span>
-                <span>Node</span><span>Geolocation</span></div>
+              <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="https://699fourteenth.com/">699Fourteenth</a></h1>
+              <p>699Fourteenth is a Wordpress website I updated for a client that offers prime office space in Washington DC. This website was created using Encode theme.</p>
+              <div className="project__buttons"><span>Wordpress</span><span>CSS</span><span>Encode Theme</span></div>
             </div>
           </div>
+
           <div className="project">
-            <div className="project__image project--five"></div>
+            <a href="http://centroevangelisticodc.org/" rel="noopener noreferrer" target="_blank" className="image--link"><div className="project__image project--five"></div></a>
             <div className="project__info">
               <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="http://centroevangelisticodc.org/">CE Church(Non-profit)</a></h1>
               <p>A wordpress website for a non-profit organization and community of believers. This website was created using a Material Design based theme.</p>
@@ -81,16 +81,28 @@ class App extends Component {
                 <span>HTML</span></div>
             </div>
           </div>
+
           <div className="project">
-            <div className="project__image project--two"></div>
+            <a href="https://ateball.surge.sh/" rel="noopener noreferrer" target="_blank" className="image--link"><div className="project__image project--one"></div></a>
+            <div className="project__info">
+              <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="https://ateball.surge.sh/">Ate-Ball</a></h1>
+              <p>My latest Project where I partnered with Luis Ortiz to create a React app that will solve the world problem risen by the question "where do you want to go eat?" Using geolocation, Zomatos and Yelp Fusion Api I present to you, Ateball.</p>
+              <div className="project__buttons"><span>React</span><span>CSS</span><span>Mongo</span><span>Yelp</span>
+                <span>Node</span><span>Geolocation</span></div>
+            </div>
+          </div>
+
+          <div className="project">
+            <a href="https://sleepy-bayou-76332.herokuapp.com/" rel="noopener noreferrer" target="_blank" className="image--link"><div className="project__image project--two"></div></a>
             <div className="project__info">
               <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="https://sleepy-bayou-76332.herokuapp.com/">PixaShare</a></h1>
               <p>PixaShare is an application I made to implement the MEHN stack(MongoDB, Express, Handlebars, Node). I created it using these technologies:</p>
               <div className="project__buttons"><span>Bootstrap</span><span>HTML</span><span>Handlebars</span><span>Express</span><span>Node</span><span>Mongo</span></div>
             </div>
           </div>
+
           <div className="project">
-            <div className="project__image project--three"></div>
+            <a href="https://sweetest-memories-portfolio.herokuapp.com/" rel="noopener noreferrer" target="_blank" className="image--link"><div className="project__image project--three"></div></a>
             <div className="project__info">
               <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="https://sweetest-memories-portfolio.herokuapp.com/">Sweetest-Memories</a></h1>
               <p>This is a website I update and maintain. I created this website using a bootstrap theme from bootstrapmade for a Photographer using the following technologies:</p>
@@ -98,7 +110,7 @@ class App extends Component {
             </div>
           </div>
           <div className="project">
-            <div className="project__image project--four"></div>
+            <a href="https://juancbaires.github.io/Trivia/" rel="noopener noreferrer" target="_blank" className="image--link"><div className="project__image project--six"></div></a>
             <div className="project__info">
               <h1 className="project__title"><a rel="noopener noreferrer" target="_blank" href="https://juancbaires.github.io/Trivia/">Fron-Trivia</a></h1>
               <p>Fron-trivia is a game I made to help test my HTML, CSS, and JavaScript knowledge using the following technologies:</p>

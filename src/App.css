@@ -417,7 +417,7 @@ span {
 }
 
 .project--four {
-  background-image: url('./images/FrontTriviaMacBook.png');
+  background-image: url('./images/699fourteenthLaptop.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -428,6 +428,18 @@ span {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.project--six {
+  background-image: url('./images/FrontTriviaMacBook.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image--link {
+  align-self: center;
+  padding: 0px;
 }
 
 /**
