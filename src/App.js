@@ -121,10 +121,11 @@ class App extends Component {
         </section>
 
         {/* PROJECT SECTION START */}
+        {/* PROJECT ALVIAL AND ASSOCIATES */}
         <section id="projects" className="project__container">
           <div className="project">
             <a
-              href="http://centroevangelisticodc.org/"
+              href="https://alvialandassociates.com/"
               rel="noopener noreferrer"
               target="_blank"
               className="image--link"
@@ -136,7 +137,7 @@ class App extends Component {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="http://centroevangelisticodc.org/"
+                  href="https://alvialandassociates.com/"
                 >
                   Alvial & Associates
                 </a>
