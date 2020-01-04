@@ -144,7 +144,7 @@ class App extends Component {
               </h1>
               <p>
                 Alvial and Associates is a wordpress website for a General
-                Contrator. I build this website from scratch using the Divi
+                Contrator. I built this website from scratch using the Divi
                 theme and a variety of plugins.
               </p>
               <div className="project__buttons">
